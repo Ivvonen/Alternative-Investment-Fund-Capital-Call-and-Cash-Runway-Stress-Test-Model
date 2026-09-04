@@ -60,13 +60,13 @@ st.title("AIFMD Capital Call & Cash Runway Stress Engine")
 st.markdown("Assess structural funding liquidity risks for illiquid Alternative Investment Funds (PE/Private Debt) under CSSF Circular 18/698 directives.")
 
 # Sidebar Parameters
-st.sidebar.header("📋 Fund Structural Inputs")
+st.sidebar.header("Fund Structural Inputs")
 total_aum = st.sidebar.number_input("Total Committed Capital (€)", value=100000000, step=10000000)
 cash_init = st.sidebar.number_input("Initial Cash Position (€)", value=10000000, step=1000000)
 credit_facility = st.sidebar.number_input("Subscription Credit Line Max (€)", value=20000000, step=1000000)
 fixed_expenses = st.sidebar.number_input("Quarterly Operational/Deal Expenses (€)", value=12000000, step=500000)
 
-st.sidebar.header("⚡ Macro Shock Scenario")
+st.sidebar.header("Macro Shock Scenario")
 call_per_quarter = st.sidebar.slider("Planned Capital Call per Quarter (€)", 5000000, 30000000, 15000000, step=1000000)
 default_rate_slider = st.sidebar.slider("Limited Partner (LP) Default Rate (%)", 0, 60, 25) / 100
 
