@@ -56,7 +56,7 @@ class AIFLiquidityEngine:
 
 # --- STREAMLIT FRONT-END ---
 st.set_page_config(page_title="AIFMD Liquidity Engine", layout="wide")
-st.title("🧱 AIFMD Capital Call & Cash Runway Stress Engine")
+st.title("AIFMD Capital Call & Cash Runway Stress Engine")
 st.markdown("Assess structural funding liquidity risks for illiquid Alternative Investment Funds (PE/Private Debt) under CSSF Circular 18/698 directives.")
 
 # Sidebar Parameters
@@ -80,9 +80,9 @@ col1.metric("Unfunded LP Capital Pool", f"€{engine.unfunded_capital:,.2f}")
 col2.metric("Total Stressed Capital Loss", f"€{df_results['Capital Called'].sum() * default_rate_slider:,.2f}")
 
 if is_breached:
-    col3.error(f"⚠️ Technical Default Status: BREACHED in {df_results.loc[df_results['Status']=='BREACHED', 'Quarter'].iloc[0]}")
+    col3.error(f"Technical Default Status: BREACHED in {df_results.loc[df_results['Status']=='BREACHED', 'Quarter'].iloc[0]}")
 else:
-    col3.success("✅ Technical Default Status: COMPLIANT (Liquidity Intact)")
+    col3.success("Technical Default Status: COMPLIANT (Liquidity Intact)")
 
 st.markdown("---")
 chart_col, data_col = st.columns([2, 1])
