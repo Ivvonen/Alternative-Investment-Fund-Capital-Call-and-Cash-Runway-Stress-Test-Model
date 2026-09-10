@@ -55,7 +55,7 @@ class AIFLiquidityEngine:
         return pd.DataFrame(simulation_log), breached, breach_quarter
 
 # --- STREAMLIT FRONT-END ---
-st.set_page_config(page_title="AIFMD Liquidity Engine", layout="wide")
+st.set_page_config(page_title="AIF Liquidity Risk Model", layout="wide")
 st.subheader("Alternative Investment Fund (AIF) Capital Call and Cash Runway Stress Test Model")
 st.markdown("This model simulates structural funding liquidity risks for illiquid Alternative Investment Funds (PE/Private Debt).")
 
