@@ -57,7 +57,7 @@ class AIFLiquidityEngine:
 # --- STREAMLIT FRONT-END ---
 st.set_page_config(page_title="AIFMD Liquidity Engine", layout="wide")
 st.subheader("Alternative Investment Fund (AIF) Capital Call and Cash Runway Stress Test Model")
-st.markdown("Assess structural funding liquidity risks for illiquid Alternative Investment Funds (PE/Private Debt) under CSSF Circular 18/698 directives.")
+st.markdown("Assess structural funding liquidity risks for illiquid Alternative Investment Funds (PE/Private Debt) under CSSF Circular 18/698.")
 
 # Sidebar Parameters
 st.sidebar.header("Fund Structural Inputs")
